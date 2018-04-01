@@ -61,7 +61,7 @@ jQuery(document).ready(function($) {
 
 
   //bar menu for smartphone
-  $(".js-bar").on("tap", function(){
+  $(".js-bar").on("click", function(){
     var windowHeight = screen.height + "px";
     $(".js-bar").hide();
     $(".js-cross").show();
@@ -70,7 +70,7 @@ jQuery(document).ready(function($) {
     $("body").addClass("no-scroll");
   });
 
-  $(".js-cross").on("tap", function(){
+  $(".js-cross").on("click", function(){
     $(".js-cross").hide();
     $(".js-bar").show();
     $(".toggle-menu").animate({height: "0px"});
