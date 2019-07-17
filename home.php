@@ -19,7 +19,7 @@
               <div class="post-meta">
                 <span class="post-tag"><a href=""><?php the_category(', '); ?></a></span>
                 <span>/</span>
-                <time><?php the_time('M d, Y') ?></time>
+                <time><?php echo get_post_time('F d, Y') ?></time>
               </div>
               <p><?php echo mb_substr(strip_tags($post-> post_content), 0, 200).'...'; ?>...</p>
 
